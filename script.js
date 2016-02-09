@@ -44,9 +44,10 @@ window.onload = function () {
     var image4 = new Image();
     image4.src = 'images/image4.png';
 
-    var serie1 = [image1, image1, image1, image1];
+    var serie1 = [image1, image2, image3, image4];
 
-    document.getElementById("div1").appendChild(image1);
-    document.getElementById("div2").appendChild(image2);
+    document.getElementById("div1").appendChild(serie1[0]);
+    document.getElementById("div2").appendChild(serie1[1]);
+    document.getElementById("div3").appendChild(serie1[2]);
 
 };
