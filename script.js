@@ -1,9 +1,3 @@
-
-function Figura() {
-  this.ID = 0;
-  this.dept = "general";
-}
-
 window.onload = function () {
 
      var divs = document.querySelectorAll('div');
