@@ -13,7 +13,9 @@ div {
     float: left;
 }
 
-div:last-of-type {
+
+
+#div4 {
         border-style: dashed;
 }
 
