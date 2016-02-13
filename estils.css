@@ -13,6 +13,24 @@ div {
     float: left;
 }
 
+#tablePrint {
+    border: none;
+}
+
+table {
+
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
 
 
 #div4 {

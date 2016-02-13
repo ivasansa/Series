@@ -39,7 +39,6 @@ window.onload = function () {
     console.log(count);
 
 
-    //comprovació de si hem acabat totes les sèries
 
      var divs = document.querySelectorAll('div');
     [].forEach.call(divs, function (item) {

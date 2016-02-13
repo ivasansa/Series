@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ca" >
+<html lang="ca" manifest="daw2.mf">
 
 <head>
     <meta charset="utf-8" />
@@ -13,15 +13,16 @@
     <h1>Final</h1>
 
     <form onSubmit="return false;">
-        Indicanos tu nombre:
+        Introdueix el nom
         <input type="text" name="nombre" id="nombre">
         <br>
 
             <input type="button" value="Guardar Puntuació" onclick="guardarNom()" />
             <input type="button" value="Esborrar Puntuació" onclick="esborrarNom()" />
     </form>
-
-    <p id="resultat"></p>
+    </br>
+    <h2>Puntuacions</h2>
+    <div id="tablePrint"></div>
 
 </body>
 
