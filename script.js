@@ -1,3 +1,10 @@
+function dataInici(){
+    var d = new Date();
+    var inici = d.getTime();
+    return inici;
+}
+
+
 //cloneNode permet fer còpies dels Node, mentre que appendChild els mou
 function mostraSerie(serie){
     document.getElementById("div1").appendChild(serie[0].cloneNode(true));
@@ -13,20 +20,26 @@ function getComptador(){
     else {
         sessionStorage.counter=0;
         var count = Number(sessionStorage.counter);
+        sessionStorage.inici = dataInici();// Al ser la primera serie, posem en marxa el temps
      }
     return count;
 }
 
 window.onload = function () {
+
+
     var count = getComptador(); //recuperem el valor del contador o el posem a 0 si es la primera sèrie
 
+    //Comprovem quan arribem a la última sèrie
+    if(count == 4){
+        window.location.href = 'final.html';
+        sessionStorage.counter=5;
+    }
 
     console.log(count);
 
-    //comprovació de si hem acabat totes les sèries
-    if(count >= 4){
 
-    }
+    //comprovació de si hem acabat totes les sèries
 
      var divs = document.querySelectorAll('div');
     [].forEach.call(divs, function (item) {
@@ -89,3 +102,5 @@ window.onload = function () {
 
 
 };
+
+

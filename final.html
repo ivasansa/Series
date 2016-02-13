@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ca" >
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sèries</title>
+    <link rel="stylesheet" href="estils.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="scriptForm.js"></script>
+</head>
+
+<body>
+    <h1>Final</h1>
+
+    <form onSubmit="return false;">
+        Indicanos tu nombre:
+        <input type="text" name="nombre" id="nombre">
+        <br>
+
+            <input type="button" value="Guardar Puntuació" onclick="guardarNom()" />
+            <input type="button" value="Esborrar Puntuació" onclick="esborrarNom()" />
+    </form>
+
+    <p id="resultat"></p>
+
+</body>
+
+</html>
